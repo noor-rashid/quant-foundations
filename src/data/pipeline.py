@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import datetime
-from fetchers import fetch_ohlcv
+from data.fetchers import fetch_ohlcv
 import pandas as pd
 
 def get_ohlcv(output_dir: str, symbol: str, interval: str, start: str, end: str) -> pd.DataFrame:
